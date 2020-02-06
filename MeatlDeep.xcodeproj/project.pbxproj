@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3112FB5623E52AAF00EEB0AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB5523E52AAF00EEB0AF /* AppDelegate.swift */; };
+		3112FB5823E52AAF00EEB0AF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB5723E52AAF00EEB0AF /* GameViewController.swift */; };
+		3112FB5F23E52AB100EEB0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3112FB5E23E52AB100EEB0AF /* Assets.xcassets */; };
+		3112FB6223E52AB100EEB0AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3112FB6023E52AB100EEB0AF /* Main.storyboard */; };
+		3112FB6E23E52AB100EEB0AF /* MeatlDeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB6D23E52AB100EEB0AF /* MeatlDeepTests.swift */; };
+		3112FB7923E52AB100EEB0AF /* MeatlDeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB7823E52AB100EEB0AF /* MeatlDeepUITests.swift */; };
+		3112FB8B23E5301800EEB0AF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB8A23E5301800EEB0AF /* Shaders.metal */; };
+		31A33E4023EBD80200B72470 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E3F23EBD80200B72470 /* Render.swift */; };
+		31A33E4223EBD98600B72470 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31A33E4123EBD98600B72470 /* teapot.obj */; };
+		31A33E4423EBDC9F00B72470 /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E4323EBDC9F00B72470 /* MathUtilities.swift */; };
+		31A33E4823EBE52C00B72470 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E4723EBE52C00B72470 /* Scene.swift */; };
+		31A33E4A23EBF06000B72470 /* bob.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31A33E4923EBF06000B72470 /* bob.obj */; };
+		31A33E4C23EBF1AA00B72470 /* blub.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31A33E4B23EBF1AA00B72470 /* blub.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3112FB6A23E52AB100EEB0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3112FB4A23E52AAF00EEB0AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3112FB5123E52AAF00EEB0AF;
+			remoteInfo = MeatlDeep;
+		};
+		3112FB7523E52AB100EEB0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3112FB4A23E52AAF00EEB0AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3112FB5123E52AAF00EEB0AF;
+			remoteInfo = MeatlDeep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3112FB5223E52AAF00EEB0AF /* MeatlDeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeatlDeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3112FB5523E52AAF00EEB0AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3112FB5723E52AAF00EEB0AF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3112FB5E23E52AB100EEB0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3112FB6123E52AB100EEB0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3112FB6323E52AB100EEB0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3112FB6423E52AB100EEB0AF /* MeatlDeep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeatlDeep.entitlements; sourceTree = "<group>"; };
+		3112FB6923E52AB100EEB0AF /* MeatlDeepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeatlDeepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3112FB6D23E52AB100EEB0AF /* MeatlDeepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatlDeepTests.swift; sourceTree = "<group>"; };
+		3112FB6F23E52AB100EEB0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3112FB7423E52AB100EEB0AF /* MeatlDeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeatlDeepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3112FB7823E52AB100EEB0AF /* MeatlDeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatlDeepUITests.swift; sourceTree = "<group>"; };
+		3112FB7A23E52AB100EEB0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3112FB8A23E5301800EEB0AF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		31A33E3F23EBD80200B72470 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
+		31A33E4123EBD98600B72470 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		31A33E4323EBDC9F00B72470 /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
+		31A33E4723EBE52C00B72470 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		31A33E4923EBF06000B72470 /* bob.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bob.obj; sourceTree = "<group>"; };
+		31A33E4B23EBF1AA00B72470 /* blub.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blub.obj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3112FB4F23E52AAF00EEB0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB6623E52AB100EEB0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB7123E52AB100EEB0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3112FB4923E52AAF00EEB0AF = {
+			isa = PBXGroup;
+			children = (
+				3112FB5423E52AAF00EEB0AF /* MeatlDeep */,
+				3112FB6C23E52AB100EEB0AF /* MeatlDeepTests */,
+				3112FB7723E52AB100EEB0AF /* MeatlDeepUITests */,
+				3112FB5323E52AAF00EEB0AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3112FB5323E52AAF00EEB0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3112FB5223E52AAF00EEB0AF /* MeatlDeep.app */,
+				3112FB6923E52AB100EEB0AF /* MeatlDeepTests.xctest */,
+				3112FB7423E52AB100EEB0AF /* MeatlDeepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3112FB5423E52AAF00EEB0AF /* MeatlDeep */ = {
+			isa = PBXGroup;
+			children = (
+				3112FB5523E52AAF00EEB0AF /* AppDelegate.swift */,
+				3112FB5723E52AAF00EEB0AF /* GameViewController.swift */,
+				31A33E3F23EBD80200B72470 /* Render.swift */,
+				3112FB8A23E5301800EEB0AF /* Shaders.metal */,
+				3112FB6023E52AB100EEB0AF /* Main.storyboard */,
+				3112FB5E23E52AB100EEB0AF /* Assets.xcassets */,
+				31A33E4123EBD98600B72470 /* teapot.obj */,
+				31A33E4923EBF06000B72470 /* bob.obj */,
+				31A33E4B23EBF1AA00B72470 /* blub.obj */,
+				3112FB6323E52AB100EEB0AF /* Info.plist */,
+				3112FB6423E52AB100EEB0AF /* MeatlDeep.entitlements */,
+				31A33E4323EBDC9F00B72470 /* MathUtilities.swift */,
+				31A33E4723EBE52C00B72470 /* Scene.swift */,
+			);
+			path = MeatlDeep;
+			sourceTree = "<group>";
+		};
+		3112FB6C23E52AB100EEB0AF /* MeatlDeepTests */ = {
+			isa = PBXGroup;
+			children = (
+				3112FB6D23E52AB100EEB0AF /* MeatlDeepTests.swift */,
+				3112FB6F23E52AB100EEB0AF /* Info.plist */,
+			);
+			path = MeatlDeepTests;
+			sourceTree = "<group>";
+		};
+		3112FB7723E52AB100EEB0AF /* MeatlDeepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3112FB7823E52AB100EEB0AF /* MeatlDeepUITests.swift */,
+				3112FB7A23E52AB100EEB0AF /* Info.plist */,
+			);
+			path = MeatlDeepUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3112FB5123E52AAF00EEB0AF /* MeatlDeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3112FB7D23E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeep" */;
+			buildPhases = (
+				3112FB4E23E52AAF00EEB0AF /* Sources */,
+				3112FB4F23E52AAF00EEB0AF /* Frameworks */,
+				3112FB5023E52AAF00EEB0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeatlDeep;
+			productName = MeatlDeep;
+			productReference = 3112FB5223E52AAF00EEB0AF /* MeatlDeep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3112FB6823E52AB100EEB0AF /* MeatlDeepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3112FB8023E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeepTests" */;
+			buildPhases = (
+				3112FB6523E52AB100EEB0AF /* Sources */,
+				3112FB6623E52AB100EEB0AF /* Frameworks */,
+				3112FB6723E52AB100EEB0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3112FB6B23E52AB100EEB0AF /* PBXTargetDependency */,
+			);
+			name = MeatlDeepTests;
+			productName = MeatlDeepTests;
+			productReference = 3112FB6923E52AB100EEB0AF /* MeatlDeepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3112FB7323E52AB100EEB0AF /* MeatlDeepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3112FB8323E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeepUITests" */;
+			buildPhases = (
+				3112FB7023E52AB100EEB0AF /* Sources */,
+				3112FB7123E52AB100EEB0AF /* Frameworks */,
+				3112FB7223E52AB100EEB0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3112FB7623E52AB100EEB0AF /* PBXTargetDependency */,
+			);
+			name = MeatlDeepUITests;
+			productName = MeatlDeepUITests;
+			productReference = 3112FB7423E52AB100EEB0AF /* MeatlDeepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3112FB4A23E52AAF00EEB0AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jacob Sansbury";
+				TargetAttributes = {
+					3112FB5123E52AAF00EEB0AF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3112FB6823E52AB100EEB0AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3112FB5123E52AAF00EEB0AF;
+					};
+					3112FB7323E52AB100EEB0AF = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3112FB5123E52AAF00EEB0AF;
+					};
+				};
+			};
+			buildConfigurationList = 3112FB4D23E52AAF00EEB0AF /* Build configuration list for PBXProject "MeatlDeep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3112FB4923E52AAF00EEB0AF;
+			productRefGroup = 3112FB5323E52AAF00EEB0AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3112FB5123E52AAF00EEB0AF /* MeatlDeep */,
+				3112FB6823E52AB100EEB0AF /* MeatlDeepTests */,
+				3112FB7323E52AB100EEB0AF /* MeatlDeepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3112FB5023E52AAF00EEB0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3112FB5F23E52AB100EEB0AF /* Assets.xcassets in Resources */,
+				31A33E4C23EBF1AA00B72470 /* blub.obj in Resources */,
+				3112FB6223E52AB100EEB0AF /* Main.storyboard in Resources */,
+				31A33E4223EBD98600B72470 /* teapot.obj in Resources */,
+				31A33E4A23EBF06000B72470 /* bob.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB6723E52AB100EEB0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB7223E52AB100EEB0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3112FB4E23E52AAF00EEB0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3112FB5823E52AAF00EEB0AF /* GameViewController.swift in Sources */,
+				3112FB5623E52AAF00EEB0AF /* AppDelegate.swift in Sources */,
+				31A33E4823EBE52C00B72470 /* Scene.swift in Sources */,
+				3112FB8B23E5301800EEB0AF /* Shaders.metal in Sources */,
+				31A33E4023EBD80200B72470 /* Render.swift in Sources */,
+				31A33E4423EBDC9F00B72470 /* MathUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB6523E52AB100EEB0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3112FB6E23E52AB100EEB0AF /* MeatlDeepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3112FB7023E52AB100EEB0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3112FB7923E52AB100EEB0AF /* MeatlDeepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3112FB6B23E52AB100EEB0AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3112FB5123E52AAF00EEB0AF /* MeatlDeep */;
+			targetProxy = 3112FB6A23E52AB100EEB0AF /* PBXContainerItemProxy */;
+		};
+		3112FB7623E52AB100EEB0AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3112FB5123E52AAF00EEB0AF /* MeatlDeep */;
+			targetProxy = 3112FB7523E52AB100EEB0AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3112FB6023E52AB100EEB0AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3112FB6123E52AB100EEB0AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3112FB7B23E52AB100EEB0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3112FB7C23E52AB100EEB0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3112FB7E23E52AB100EEB0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeatlDeep/MeatlDeep.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3112FB7F23E52AB100EEB0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeatlDeep/MeatlDeep.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3112FB8123E52AB100EEB0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeatlDeep.app/Contents/MacOS/MeatlDeep";
+			};
+			name = Debug;
+		};
+		3112FB8223E52AB100EEB0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeatlDeep.app/Contents/MacOS/MeatlDeep";
+			};
+			name = Release;
+		};
+		3112FB8423E52AB100EEB0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MeatlDeep;
+			};
+			name = Debug;
+		};
+		3112FB8523E52AB100EEB0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeatlDeepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.workbyjacob.MeatlDeepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MeatlDeep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3112FB4D23E52AAF00EEB0AF /* Build configuration list for PBXProject "MeatlDeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3112FB7B23E52AB100EEB0AF /* Debug */,
+				3112FB7C23E52AB100EEB0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3112FB7D23E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3112FB7E23E52AB100EEB0AF /* Debug */,
+				3112FB7F23E52AB100EEB0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3112FB8023E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3112FB8123E52AB100EEB0AF /* Debug */,
+				3112FB8223E52AB100EEB0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3112FB8323E52AB100EEB0AF /* Build configuration list for PBXNativeTarget "MeatlDeepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3112FB8423E52AB100EEB0AF /* Debug */,
+				3112FB8523E52AB100EEB0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3112FB4A23E52AAF00EEB0AF /* Project object */;
+}
