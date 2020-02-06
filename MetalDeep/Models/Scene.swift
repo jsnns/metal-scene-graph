@@ -42,6 +42,10 @@ class Node {
         self.name = name
     }
     
+    func add(node: Node) {
+        children.append(node)
+    }
+    
     func nodeNamedRecursive(_ name: String) -> Node? {
         for node in children {
             if node.name == name {
@@ -53,6 +57,11 @@ class Node {
         return nil
     }
     
+    func update(time: Float) {        
+        for node in children {
+            node.update(time: time)
+        }
+    }
 }
 
 class Scene {
@@ -66,5 +75,13 @@ class Scene {
         } else {
             return rootNode.nodeNamedRecursive(name)
         }
+    }
+    
+    func add(node: Node) {
+        rootNode.add(node: node)
+    }
+    
+    func update(time: Float) {
+        rootNode.update(time: time)
     }
 }
