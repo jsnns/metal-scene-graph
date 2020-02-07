@@ -31,5 +31,24 @@ class GameViewController: NSViewController {
         
         render = Render(view: mtkView, device: device)
         mtkView.delegate = render
+        
+        NSEvent.addLocalMonitorForEvents(matching: .keyDown) { (aEvent) -> NSEvent? in
+            self.keyDown(with: aEvent)
+            return aEvent
+        }
+        
+        NSEvent.addLocalMonitorForEvents(matching: .keyUp) { (aEvent) -> NSEvent? in
+            self.keyUp(with: aEvent)
+            return aEvent
+        }
+    }
+    
+    override func keyUp(with event: NSEvent) {
+        render.keyUp(event: event)
+    }
+    
+    override func keyDown(with event: NSEvent) {
+        print("From ViewController \(event.keyCode)")
+        render.keyDown(event: event)
     }
 }

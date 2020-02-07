@@ -15,6 +15,8 @@
 		3112FB7923E52AB100EEB0AF /* MeatlDeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB7823E52AB100EEB0AF /* MeatlDeepUITests.swift */; };
 		3112FB8B23E5301800EEB0AF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3112FB8A23E5301800EEB0AF /* Shaders.metal */; };
 		3153BF7223EC926900CD524A /* Blub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BF7123EC926900CD524A /* Blub.swift */; };
+		3153BF7423ECB66A00CD524A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BF7323ECB66A00CD524A /* Node.swift */; };
+		3153BF7623ECB67000CD524A /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153BF7523ECB67000CD524A /* Types.swift */; };
 		31A33E4023EBD80200B72470 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E3F23EBD80200B72470 /* Render.swift */; };
 		31A33E4223EBD98600B72470 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31A33E4123EBD98600B72470 /* teapot.obj */; };
 		31A33E4423EBDC9F00B72470 /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E4323EBDC9F00B72470 /* MathUtilities.swift */; };
@@ -23,6 +25,8 @@
 		31A33E4C23EBF1AA00B72470 /* blub.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31A33E4B23EBF1AA00B72470 /* blub.obj */; };
 		31A33E4E23EC903A00B72470 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E4D23EC903A00B72470 /* World.swift */; };
 		31A33E5123EC906100B72470 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E5023EC906100B72470 /* Duck.swift */; };
+		31AD782823ECE570007AF8FE /* sprinkles.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31AD782723ECE570007AF8FE /* sprinkles.obj */; };
+		31AD782A23ECE574007AF8FE /* sprinkles.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 31AD782923ECE574007AF8FE /* sprinkles.mtl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 		3112FB7A23E52AB100EEB0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3112FB8A23E5301800EEB0AF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		3153BF7123EC926900CD524A /* Blub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blub.swift; sourceTree = "<group>"; };
+		3153BF7323ECB66A00CD524A /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		3153BF7523ECB67000CD524A /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		31A33E3F23EBD80200B72470 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
 		31A33E4123EBD98600B72470 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		31A33E4323EBDC9F00B72470 /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 		31A33E4B23EBF1AA00B72470 /* blub.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blub.obj; sourceTree = "<group>"; };
 		31A33E4D23EC903A00B72470 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		31A33E5023EC906100B72470 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
+		31AD782723ECE570007AF8FE /* sprinkles.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprinkles.obj; sourceTree = "<group>"; };
+		31AD782923ECE574007AF8FE /* sprinkles.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprinkles.mtl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +127,16 @@
 				3112FB5523E52AAF00EEB0AF /* AppDelegate.swift */,
 				3112FB5723E52AAF00EEB0AF /* GameViewController.swift */,
 				31A33E3F23EBD80200B72470 /* Render.swift */,
-				31A33E4323EBDC9F00B72470 /* MathUtilities.swift */,
 				3112FB8A23E5301800EEB0AF /* Shaders.metal */,
-				31A33E4F23EC905700B72470 /* Models */,
+				31A33E4F23EC905700B72470 /* Primitives */,
 				3112FB6023E52AB100EEB0AF /* Main.storyboard */,
 				3112FB5E23E52AB100EEB0AF /* Assets.xcassets */,
 				31A33E4123EBD98600B72470 /* teapot.obj */,
 				31A33E4923EBF06000B72470 /* bob.obj */,
+				31AD782723ECE570007AF8FE /* sprinkles.obj */,
+				31AD782923ECE574007AF8FE /* sprinkles.mtl */,
 				31A33E4B23EBF1AA00B72470 /* blub.obj */,
+				31A33E4323EBDC9F00B72470 /* MathUtilities.swift */,
 				3112FB6323E52AB100EEB0AF /* Info.plist */,
 				3112FB6423E52AB100EEB0AF /* MeatlDeep.entitlements */,
 			);
@@ -151,15 +161,25 @@
 			path = MetalDeepUITests;
 			sourceTree = "<group>";
 		};
-		31A33E4F23EC905700B72470 /* Models */ = {
+		3153BF7723ECB7F600CD524A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				31A33E4723EBE52C00B72470 /* Scene.swift */,
+				31A33E4D23EC903A00B72470 /* World.swift */,
 				31A33E5023EC906100B72470 /* Duck.swift */,
 				3153BF7123EC926900CD524A /* Blub.swift */,
-				31A33E4D23EC903A00B72470 /* World.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		31A33E4F23EC905700B72470 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				3153BF7723ECB7F600CD524A /* Models */,
+				31A33E4723EBE52C00B72470 /* Scene.swift */,
+				3153BF7323ECB66A00CD524A /* Node.swift */,
+				3153BF7523ECB67000CD524A /* Types.swift */,
+			);
+			path = Primitives;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AD782A23ECE574007AF8FE /* sprinkles.mtl in Resources */,
 				3112FB5F23E52AB100EEB0AF /* Assets.xcassets in Resources */,
 				31A33E4C23EBF1AA00B72470 /* blub.obj in Resources */,
 				3112FB6223E52AB100EEB0AF /* Main.storyboard in Resources */,
+				31AD782823ECE570007AF8FE /* sprinkles.obj in Resources */,
 				31A33E4223EBD98600B72470 /* teapot.obj in Resources */,
 				31A33E4A23EBF06000B72470 /* bob.obj in Resources */,
 			);
@@ -296,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3112FB5823E52AAF00EEB0AF /* GameViewController.swift in Sources */,
+				3153BF7423ECB66A00CD524A /* Node.swift in Sources */,
 				3112FB5623E52AAF00EEB0AF /* AppDelegate.swift in Sources */,
 				31A33E4823EBE52C00B72470 /* Scene.swift in Sources */,
 				31A33E4E23EC903A00B72470 /* World.swift in Sources */,
@@ -303,6 +326,7 @@
 				3112FB8B23E5301800EEB0AF /* Shaders.metal in Sources */,
 				3153BF7223EC926900CD524A /* Blub.swift in Sources */,
 				31A33E4023EBD80200B72470 /* Render.swift in Sources */,
+				3153BF7623ECB67000CD524A /* Types.swift in Sources */,
 				31A33E4423EBDC9F00B72470 /* MathUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MeatlDeep/MeatlDeep.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MetalDeep/MetalDeep.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MetalDeep/Info.plist;
@@ -485,7 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MeatlDeep/MeatlDeep.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MetalDeep/MetalDeep.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MetalDeep/Info.plist;

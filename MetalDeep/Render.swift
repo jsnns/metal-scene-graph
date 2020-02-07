@@ -192,4 +192,12 @@ class Render: NSObject, MTKViewDelegate {
             drawNodeRecursive(child, parentTransform: modelMatrix, commandEncoder: commandEncoder)
         }
     }
+    
+    func keyDown(event: NSEvent) {
+        self.world.keyDown(event: event)
+    }
+    
+    func keyUp(event: NSEvent) {
+        self.world.keyUp(event: event)
+    }
 }
