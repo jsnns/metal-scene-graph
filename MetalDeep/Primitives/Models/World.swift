@@ -48,11 +48,13 @@ class World {
         rose.modelMatrix = float4x4(translationBy: SIMD3<Float>(0.5, 0, 0))
         ducks.add(node: rose)
         
-        
         let stillBlub = Blub(name: "Still", textureName: "blub_baseColor", device: device, vertexDescriptor: vertexDescriptor)
         stillBlub.modelMatrix = float4x4(translationBy: SIMD3<Float>(0, 0, 1.5)) * float4x4(rotationAbout: SIMD3<Float>(0, -1, 0), by: Float.pi * (220/360))
         scene.add(node: stillBlub)
         
+        let sprinkes = Sprinkles(name: "Sp1", device: device, vertexDescriptor: vertexDescriptor)
+        sprinkes.modelMatrix = float4x4(translationBy: SIMD3<Float>(0, 0, -1.5)) * float4x4(scaleBy: 3)
+        scene.add(node: sprinkes)
         
         for i in 1...fishCount {
             let blub = Blub(name: "Blub \(i)", textureName: "blub_baseColor", device: device, vertexDescriptor: vertexDescriptor)
@@ -95,28 +97,71 @@ class World {
     
     func handlePressedKeys(time: Float) {
         let speed: Float = 0.1
+        let name: String = "Sp1"
         
         if pressedKeys.contains(13) {
-            if let ducks = scene.nodeNamed("Ducks") {
-                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(speed * time * 1/60, 0, 0))
+            if let ducks = scene.nodeNamed(name) {
+                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(speed * 1/60, 0, 0))
             }
         }
         
         if pressedKeys.contains(1) {
-            if let ducks = scene.nodeNamed("Ducks") {
-                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(-speed * time * 1/60, 0, 0))
+            if let ducks = scene.nodeNamed(name) {
+                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(-speed * 1/60, 0, 0))
             }
         }
         
         if pressedKeys.contains(2) {
-            if let ducks = scene.nodeNamed("Ducks") {
-                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, 0, speed * time * 1/60))
+            if let ducks = scene.nodeNamed(name) {
+                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, 0, speed * 1/60))
             }
         }
         
         if pressedKeys.contains(0) {
-            if let ducks = scene.nodeNamed("Ducks") {
-                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, 0, -speed * time * 1/60))
+            if let ducks = scene.nodeNamed(name) {
+                ducks.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, 0, -speed * 1/60))
+            }
+        }
+        
+        // Tilt Right
+        if pressedKeys.contains(12) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(rotationAbout: SIMD3<Float>(1, 0, 0), by: -speed * 1/60)
+            }
+        }
+        
+        // Tilt Left
+        if pressedKeys.contains(14) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(rotationAbout: SIMD3<Float>(1, 0, 0), by: speed  * 1/60)
+            }
+        }
+        
+        // UP
+        if pressedKeys.contains(38) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, speed * 1/60, 0))
+            }
+        }
+        
+        // DOWN
+        if pressedKeys.contains(40) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(translationBy: SIMD3<Float>(0, -speed * 1/60, 0))
+            }
+        }
+        
+        // Small: 33
+        if pressedKeys.contains(33) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(scaleBy: 1 + -speed/60)
+            }
+        }
+        
+        // Big: 30
+        if pressedKeys.contains(30) {
+            if let node = scene.nodeNamed(name) {
+                node.modelMatrix *= float4x4(scaleBy: 1 + speed/60)
             }
         }
     }

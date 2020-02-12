@@ -27,6 +27,8 @@
 		31A33E5123EC906100B72470 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A33E5023EC906100B72470 /* Duck.swift */; };
 		31AD782823ECE570007AF8FE /* sprinkles.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31AD782723ECE570007AF8FE /* sprinkles.obj */; };
 		31AD782A23ECE574007AF8FE /* sprinkles.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 31AD782923ECE574007AF8FE /* sprinkles.mtl */; };
+		31AD782C23ECE5BF007AF8FE /* Sprinkles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD782B23ECE5BF007AF8FE /* Sprinkles.swift */; };
+		31AD782E23ED1116007AF8FE /* nut.obj in Resources */ = {isa = PBXBuildFile; fileRef = 31AD782D23ED1116007AF8FE /* nut.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		31A33E5023EC906100B72470 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
 		31AD782723ECE570007AF8FE /* sprinkles.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprinkles.obj; sourceTree = "<group>"; };
 		31AD782923ECE574007AF8FE /* sprinkles.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprinkles.mtl; sourceTree = "<group>"; };
+		31AD782B23ECE5BF007AF8FE /* Sprinkles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprinkles.swift; sourceTree = "<group>"; };
+		31AD782D23ED1116007AF8FE /* nut.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nut.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +138,9 @@
 				31A33E4123EBD98600B72470 /* teapot.obj */,
 				31A33E4923EBF06000B72470 /* bob.obj */,
 				31AD782723ECE570007AF8FE /* sprinkles.obj */,
-				31AD782923ECE574007AF8FE /* sprinkles.mtl */,
+				31AD782D23ED1116007AF8FE /* nut.obj */,
 				31A33E4B23EBF1AA00B72470 /* blub.obj */,
+				31AD782923ECE574007AF8FE /* sprinkles.mtl */,
 				31A33E4323EBDC9F00B72470 /* MathUtilities.swift */,
 				3112FB6323E52AB100EEB0AF /* Info.plist */,
 				3112FB6423E52AB100EEB0AF /* MeatlDeep.entitlements */,
@@ -166,6 +171,7 @@
 			children = (
 				31A33E4D23EC903A00B72470 /* World.swift */,
 				31A33E5023EC906100B72470 /* Duck.swift */,
+				31AD782B23ECE5BF007AF8FE /* Sprinkles.swift */,
 				3153BF7123EC926900CD524A /* Blub.swift */,
 			);
 			path = Models;
@@ -293,6 +299,7 @@
 				31AD782823ECE570007AF8FE /* sprinkles.obj in Resources */,
 				31A33E4223EBD98600B72470 /* teapot.obj in Resources */,
 				31A33E4A23EBF06000B72470 /* bob.obj in Resources */,
+				31AD782E23ED1116007AF8FE /* nut.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3112FB5823E52AAF00EEB0AF /* GameViewController.swift in Sources */,
+				31AD782C23ECE5BF007AF8FE /* Sprinkles.swift in Sources */,
 				3153BF7423ECB66A00CD524A /* Node.swift in Sources */,
 				3112FB5623E52AAF00EEB0AF /* AppDelegate.swift in Sources */,
 				31A33E4823EBE52C00B72470 /* Scene.swift in Sources */,

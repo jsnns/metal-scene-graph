@@ -66,7 +66,7 @@ class Render: NSObject, MTKViewDelegate {
         
         // update aspect ratio to handle screen orientation changes
         let aspectRatio = Float(view.drawableSize.width / view.drawableSize.height)
-        projectionMatrix = float4x4(perspectiveProjectionFov: Float.pi / 3, aspectRatio: aspectRatio, nearZ: 0.1, farZ: 100)
+        projectionMatrix = float4x4(perspectiveProjectionFov: Float.pi / 3, aspectRatio: aspectRatio, nearZ: 0.1, farZ: 10  )
 
         world.update(time: time)
     }
